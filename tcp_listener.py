@@ -13,11 +13,11 @@ class TCP(BigEndianStructure):
                 ("dport",       c_ushort),
                 ("seq",         c_uint32),
                 ("ack",         c_uint32),
-                ("doff_reserv", c_ubyte),
+                ("offst_rsv",   c_ubyte),
                 ("cflag",       c_ubyte),
-                ("windsize",    c_ushort),
+                ("winsize",     c_ushort),
                 ("chksum",      c_ushort),
-                ("urgpointer",  c_ushort)
+                ("urgptr",      c_ushort)
             ]
 
     def __new__(self, socket_buffer=None):
