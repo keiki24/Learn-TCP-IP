@@ -8,7 +8,7 @@ from email.parser import HeaderParser
 from email.header import decode_header
 from imaplib import IMAP4_SSL, IMAP4
 
-from tmp.config_test import ConfigIMAP
+from config import ConfigIMAP
 conf = ConfigIMAP()
 
 # Config
